@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const SampleComponent = () => {
+const Sample = () => {
   const [inputValue, setInputValue] = useState('Howdy');
   const [refresh, setRefresh] = useState(false);
 
@@ -89,4 +89,4 @@ const SampleComponent = () => {
   );
 };
 
-export default SampleComponent;
+export default Sample;

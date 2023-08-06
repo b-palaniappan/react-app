@@ -4,10 +4,13 @@ import App from './App.jsx';
 import './assets/styles/index.css';
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
+import usersReducer from './redux/features/userSlice.js';
 
+// Create redux store at application level.
 const store = configureStore({
   reducer: {
-    // reducer will be added here.
+    // list of reducers will be added here.
+    users: usersReducer,
   },
 });
 
